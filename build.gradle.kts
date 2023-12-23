@@ -2,11 +2,19 @@ plugins {
     id("java")
 }
 
-group = "org.example"
+group = "gunmetalblack.jabaengine"
 version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
+}
+
+tasks.jar {
+    manifest {
+        attributes(
+                "Main-Class" to "gunmetalblack.jabaengine.Main"
+        )
+    }
 }
 
 dependencies {

@@ -1,4 +1,6 @@
 package gunmetalblack.jabaengine;
 
-public interface Renderable {
+public interface Renderable
+{
+    void render();
 }
