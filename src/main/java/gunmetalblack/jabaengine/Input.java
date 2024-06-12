@@ -6,7 +6,7 @@ public class Input {
     public static String pressed()
     {
         Scanner Input = new Scanner(System.in);
-        String output = Input.next();
+        String output = Input.nextLine();
         return output;
     }
 }

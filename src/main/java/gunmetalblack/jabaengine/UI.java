@@ -23,7 +23,7 @@ public class UI implements Renderable{
                 if (indexSelection < 0) {
                     indexSelection = optionsList.length - 1;
                 }
-            } else if (optionInput.equals("p")) {
+            } else if (optionInput.trim().isEmpty()) {
                 Logger.log("SELECTED" + String.valueOf(indexSelection));
                 selection(indexSelection);
                 break;
